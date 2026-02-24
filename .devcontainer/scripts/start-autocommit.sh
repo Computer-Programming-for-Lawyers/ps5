@@ -1,6 +1,6 @@
 #!/bin/bash
 # Run autocommit.sh in a loop
 while true; do
-    sleep 300 # runs every 5 min
     .devcontainer/scripts/autocommit.sh 
+    sleep 60 # runs every 1 min
 done &

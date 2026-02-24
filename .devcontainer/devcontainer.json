@@ -1,9 +1,6 @@
 {
     "name": "Python Project",
-    // "build": {
-    //     "dockerfile": "Dockerfile"
-    // },
-    "postCreateCommand": "pip3 install --user -r .devcontainer/requirements.txt && .devcontainer/scripts/setup-hooks.sh",
+    "postCreateCommand": "pip3 install --user -r .devcontainer/requirements.txt",
     "postAttachCommand": "/bin/bash .devcontainer/scripts/start-autocommit.sh",
     "customizations": {
         "vscode": {

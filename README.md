@@ -1,6 +1,6 @@
 Problem Set 5: Spell Checker
 ============================
-*Computer Programming for Lawyers - Spring 2025*
+*Computer Programming for Lawyers - Spring 2026*
 
 Introduction
 ------------
@@ -22,12 +22,10 @@ Expectations
 * You are permitted to use only the Python features we have covered so far (Chapters 1-10).
 * You should use effective programming style. A portion of your grade will be
 determined by your programming style.
-  * Please continue to adhere to the [Style Guide](https://github.com/Computer-Programming-for-Lawyers/Spring-2025/blob/main/style-guide.md).
+  * Please continue to adhere to the [Style Guide](https://github.com/Computer-Programming-for-Lawyers/Spring-2026/blob/main/style-guide.md).
 
 Summary of Tasks
 ----------------
-
-**This is a two-part problem set. Task 1 is due on March 9 at 8:00pm. We will give you brief feedback on Task 1, and then Task 2 will be due on March 16th at 8pm.**
 
 * Build and submit file `clean.ipynb`
 * Build and submit file `spell.ipynb`
@@ -53,8 +51,6 @@ checker that will try to suggest the correct spelling of a misspelled word.
 
 Task 1: clean.ipynb
 ----------------
-
-**Due March 9 at 8pm**
 
 A crucial (if somewhat hated) step of any form of data analysis is _data cleaning_. Most data you'll deal with in the real world will be inconsistent, messy, or formatted for a different purpose. Some of these flaws come from humans (think data entry errors) and others come from technical sources (think corrupted files). An analyst cleans data by creating little programs to remove the errors, resolve the inconsistencies, and recover the corrupted information. Data cleaning tends to be a painstaking process.
 
@@ -143,8 +139,6 @@ Python to write to a file called `very_important_brief.docx`, you will permanent
 
 Task 2: spell.ipynb
 ----------------
-
-**Due March 16 at 8pm**
 
 Now, let's build a spell checker.
 
@@ -278,7 +272,7 @@ a user might accidentally type `breead` or `breatd`.
 
 Whenever you detect a misspelled word, apply this heuristic to generate a list of every possible string of characters the user might have meant to have typed instead. To be clear, most of the candidates you generate will be gibberish that aren't real words. We'll get rid of all of those gibberish words in a later step. For now, just come up with every word the user might have meant to have typed.
 
-You must test this heuristic exhaustively. So you need to consider the word with the first letter removed, the second letter removed, and so on, all the way to the word with the final letter removed. **Figuring out how to generate all of these subtle variations is probably the hardest part of the assignment. Revisit the materials from [week 5 lecture](https://github.com/Computer-Programming-for-Lawyers/Spring-2025/tree/main/lecture) if you're struggling.** As a hint, break up the misspelled word into smaller parts that you then reassemble through concatenation. So, let's say the input includes the misspelled word `breatd` rather than `bread`. To apply the heuristic, you will need to generate all of the following possibilities:
+You must test this heuristic exhaustively. So you need to consider the word with the first letter removed, the second letter removed, and so on, all the way to the word with the final letter removed. **Figuring out how to generate all of these subtle variations is probably the hardest part of the assignment. Post on Ed if you're struggling.** As a hint, break up the misspelled word into smaller parts that you then reassemble through concatenation. So, let's say the input includes the misspelled word `breatd` rather than `bread`. To apply the heuristic, you will need to generate all of the following possibilities:
 
 ```
 reatd
